@@ -1,16 +1,24 @@
-# m2mob
+# Application mobile pour "Applications mobiles complexes"
 
-A new Flutter application.
+On devait développer une application comme projet pour valider cette matière. J'ai choisi d'utiliser la technologie "Flutter", un framework développé par google permettant de simplifier le développement d'applications mobile cross-plateformes.
 
-## Getting Started
+## Tankopédia
 
-This project is a starting point for a Flutter application.
+Tankopédia est une application qui permet d'acheter des chars.
 
-A few resources to get you started if this is your first Flutter project:
+Ces chars sont chargées depuis l'API fournie gratuitement par le jeu "World of Tanks", développé par la société "War Gaming".
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+Lorsqu'on lance l'application, on peut directement choisir sa nation.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Ensuite la liste des chars de la nation s'affiche. On peut filtrer suivant le tier et le type de véhicule.
+( /!\ Ces filtres ont une incidence sur le rafraichissement de la liste, celà peut buguer par moment)
+
+On peut voir les détails d'un char de la liste en cliquant dessus, et ensuite l'ajouter au panier.
+
+Sur la page principale, on peut ensuite aller dans le panier, en haut à droite. Ce panier affichera tous les chars sélectionnés.
+
+Pour désélectionner un char, on clique sur le char, et on arrive sur la page de détails du char avec le bouton "supprimer le char".
+
+Le char sera ensuite supprimer de la liste.
+
+On peut confirmer le panier quand on est sur la page en haut à droite. On arrive sur une page de confirmation, si on valide, on vide le panier alors et on revient à l'accueil.
